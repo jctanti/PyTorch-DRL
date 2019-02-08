@@ -1,0 +1,30 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "echo",
+            "type": "shell",
+            "command": "echo Hello"
+        },
+        {
+            "label": "Python Run File 1",
+            "command": "~/AppData/Local/Continuum/anaconda3/envs/conda_env_1/python.exe",
+            "isShellCommand": true,
+            "showOutput": "always",
+            "args": [
+                "GymRunners/CartPole1.py"
+            ],
+        },
+        {
+            "label": "Python Run File 2",
+            "command": "~/AppData/Local/Continuum/anaconda3/envs/conda_365/python.exe",
+            "isShellCommand": true,
+            "showOutput": "always",
+            "args": [
+                "GymRunners/CartPoleKeras.py"
+            ],
+        }
+    ]
+}
